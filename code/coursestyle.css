@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Ubuntu;
+    src: url(../font/Ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: Onest;
+    src: url(../font/Onest/Onest-Regular.ttf);
+}
+#logo{
+    width: 400px;
+    padding: 10px;
+    background-color: rgb(9, 52, 144);
+    margin-top: -30px;
+    margin: 0;
+}
+.bg{
+    margin: auto;
+    height: auto;
+    margin: -8px;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(9, 52, 144);
+}
+#h1{
+    font-family: Ubuntu;
+    font-weight: Bold;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.grid-container {
+    margin: auto;
+    display: grid;
+    max-width: 96%;
+    grid-template-rows: repeat(4, 350px);
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: stretch;
+    align-items: stretch;
+    row-gap: 20px;
+    column-gap: 30px;
+    width: 100%;
+  }
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px gainsboro;
+    padding: auto;
+    font-size: 35px;
+    text-align: center;
+    font-family: Ubuntu;
+    font-style: none;
+    font-weight: bold;
+    color: rgb(9, 52, 144);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+.grid-item:hover{
+    background-color: rgb(244, 248, 250);
+}
+.grid-item:active{
+    background-color: rgb(210, 229, 238);
+}
+
+.icon{
+    width: 170px
+}
+
+@media (max-width: 1100px){
+    .grid-container{
+     grid-template-rows: repeat(5, 350px);
+     grid-template-columns: repeat(3, 1fr);
+     column-gap: 15px;
+    }
+ }
+@media (max-width: 800px){
+   .grid-container{
+    grid-template-rows: repeat(5, 350px);
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+   }
+}

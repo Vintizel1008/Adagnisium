@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Adagnisium is a learning platform for all ages" />
+    <link rel="stylesheet" type="text/css" href="mainstyle.css" />
+    <script src="mainscript.js" defer></script>
+    <title>Adagnisium</title>
+  </head>
+
+<body>
+
+<nav class="navbar">
+    <img id="nav_logo" src="../image/adg_logo/adg_logo_txt3.png" alt="adagnisium logo">
+        
+    <a class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+
+    <div class="navbar-links">
+    <ul>
+    <li><button onclick="
+      document.getElementById('id01').style.display='block'"
+      id="login-button">Login</button></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#creator">Creator</a></li>
+    <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+</nav>
+    <!-- Login Screen -->
+      <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/code/course.html" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="../image/adg_logo/adg_logo_txt3.png" alt="Avatar" class="avatar">
+            <h2 class="avatar-text">Login to your account</h2>
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit" class="submit-login-button">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container-bottom" >
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw"><a href="#">Forgot password?</a></span>
+          </div>
+        </form>
+      </div>
+   
+
+  <div class="bg">
+    
+   <img id="logo" src="../image/adg_logo/adg_logo_white.png" alt="Adagnisium logo">
+   <h1 id="h1">Adagnisium</h1> 
+   <h2 id="h2">Geometry, algebra, and more!</h2>
+
+<a href="/code/course.html">
+  <button id="course_button">
+    Start Learning!
+  </button>
+</a>
+   </div class="bg">
+
+<h2 id="about">About Us</h2>
+<h3 class="heading3">What Is Adagnisium?</h3>
+<p class="paragraph">
+  Adagnisium is a cutting-edge online platform designed to revolutionize the way students approach mathematics. 
+  With a mission to make math accessible, engaging, and enjoyable for learners of all ages and levels, 
+  Adagnisium offers a comprehensive suite of math tutoring services and resources.
+</p>
+<p class="paragraph">
+  At Adagnisium Math Tutor, our mission is to empower students with the knowledge and confidence to excel in mathematics. 
+  We believe that every student has the potential to master math, and we are committed to providing the 
+  tools, resources, and support needed to make this a reality. Whether you're struggling with basic arithmetic or tackling advanced calculus, 
+  Adagnisium is here to guide you on your math journey, one step at a time."
+
+  Adagnisium Math Tutor is not just a website; 
+  it's a math education partner dedicated to helping students build a strong foundation in mathematics 
+  and achieve their academic goals.
+</p>
+<div id="quote">
+  <p id="qline1">“However difficult life may seem,</p>
+  <p id="qline2">there is always something you can do and succeed at.”</p>
+</div>
+<div id="quoter">
+  -Stephen Hawking-
+</div>
+</body>
+
+</html>

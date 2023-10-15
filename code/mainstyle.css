@@ -1,0 +1,435 @@
+/*Fonts*/
+@font-face {
+    font-family: Ubuntu;
+    src: url(../font/Ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: Onest;
+    src: url(../font/Onest/Onest-Regular.ttf);
+}
+
+body{
+    font-family: Ubuntu, Onest;
+    margin: 0;
+    padding:0;
+}
+
+#nav_logo{
+    margin-left: 30px;
+    width: 270px;
+    padding: 5px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+.navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color:black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+.navbar-links li a {
+    font-family: Ubuntu;
+    text-decoration:none;
+    color:black;
+    padding: 1rem;
+    display: block;
+    transition: 0.3s;
+}
+
+.navbar-links li a:hover {
+    color: rgb(46, 99, 213);
+    box-shadow: 0px -2px lightblue inset;
+}
+
+.toggle-button{
+    position:absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+  /* Set a style for all buttons */
+ 
+
+#login-button {
+
+    background-color: rgb(21, 47, 125);
+    color: white;
+    padding: 14px 20px;
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 50px;
+    height: 40px;
+    margin-right: 15px;
+    margin-left: 10px;
+
+    background-color: rgb(46, 99, 213);
+    width: auto;
+    font-family: Ubuntu;
+    font-weight: bold;
+    font-size: 17px;
+    padding-top: 10px;
+    display: block;
+  }
+#login-button:hover{
+   opacity: 80%;
+}
+
+@media (max-width: 900px){
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%
+    }
+    .navbar {
+       flex-direction: column;
+       align-items: flex-start; 
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+        box-shadow: 0px 2px lightblue inset;
+    }
+    .navbar-links li a:hover{
+        background-color: rgb(237, 248, 252);
+        box-shadow: 0px 2px lightblue inset;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+    #course_button{
+    margin-left: 50px;
+    }
+    #login-button {
+       width: 100%;
+       border-radius: 0px;
+       display: block;
+       margin: 0px;
+       text-align:center;
+    }
+}
+
+#logo{
+    margin-top: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 20px;
+    width: 200px;
+    float: left;
+}
+
+#h1{
+    margin-top:0px;
+    padding-top:200px;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 50px;
+    font-family: Ubuntu;
+    font-weight: bold;
+    color:white;
+}
+#h2{
+    margin-top: -20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 30px;
+    font-family: Onest;
+    font-weight: normal;
+    color:white;
+}
+.bg{
+    margin: auto;
+    height: 750px;
+    padding-left: 0px;
+    padding-right: 0px;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../image/banner\ \(2\).png)
+}
+.button {
+    margin-top:10px;
+    margin-left: 50px;
+    background-color:rgb(49, 184, 11);
+    color:white;
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#course_button{
+    font-family: Onest;
+    margin-top:10px;
+    
+    background-color:#1C2A50;
+    color:white;
+    border: none;
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    border: 2px solid white;
+    transition: 0.2s;
+}
+#course_button:hover{
+    color:#1C2A50;
+    background-color: white;
+}
+#course_button:active{
+    font-size: larger;
+}
+#about{
+    margin-top: 0;
+    padding: 20px;
+    text-align: center;
+    font-family: Ubuntu;
+    color:White;
+    background-color: rgb(55, 99, 233);
+    font-size: 30px;
+}
+.heading3{
+    padding-top: 30px;
+    margin: 30px;
+    font-size: 25px;
+    font-family: Ubuntu;
+}
+.paragraph{
+    padding-top: 0px;
+    margin: 30px;
+    font-size: large;
+    font-family: Onest; 
+    text-align: justify;
+    text-justify: inter-word;
+}
+#quote {
+    text-align: center;
+    font-family: Onest;
+    color:White;
+    background-color: rgb(21, 47, 125);
+    font-size: 30px;  
+}
+#quote #qline1{
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+#quote #qline2 {
+    margin: 0px;
+    padding-top: -7px;
+}
+#quoter{
+    padding-top: 10px;
+    text-align: center;
+    font-family: Ubuntu;
+    color:White;
+    background-color: rgb(21, 47, 125);
+    font-size: 20px;  
+    padding-bottom: 30px;
+}
+
+
+/* Login Feature */
+.submit-login-button{
+    background-color: rgb(21, 47, 125);
+    color: white;
+    font-size: large;
+    font-family: Ubuntu;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 50px;
+    height: 40px;
+    margin-top:10px;
+    margin-bottom: 15px;
+}
+
+.container-bottom {
+    background-color: #f1f1f1;;
+    height: 100px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+ 
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    background-color: #f44336;
+    color: white;
+    font-size: large;
+    font-family: Ubuntu;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    height: 40px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: auto;
+    
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 60%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+    margin-right: 30px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    /*overflow: auto;*/ /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 500px; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 650px) {
+    .modal-content{
+        width: 80%;
+    }
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 90%;
+       margin-right: 5%;
+       margin-left: 5%;
+       margin-top: 30px;
+       margin-bottom: 10px;
+    }
+    .container-bottom{
+        height: 150px;
+    }
+    span.psw{
+        margin-left: 20px;
+    }
+  }
+  .avatar-text {
+    margin: 10px;
+  }
